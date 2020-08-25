@@ -22,8 +22,8 @@ steps:
     targetType: 'inline'
     script: |
       #$ErrorActionPreference='continue'
-      param($AppName)
-      $appName=$AppName
+      
+      $appName=$env:APPNAME
       Write-Host $appName
       #Write-Host $env:Build_SourcesDirectory
       #$cdir=$env:Build_SourcesDirectory
