@@ -1,0 +1,26 @@
+{
+  "App1": {
+    "Tool1": {
+      "ProjectKey": "1"
+    },
+    "Tool2": {
+      "DEV": {
+        "AppId": 123
+      },
+      "QA": {
+        "AppId": 123
+      },
+      "PROD": {
+        "AppId": "NA"
+      }
+    },
+    "Tool3": {
+      "ReportingChannel": {
+        "SPSiteRelativeUrl": "/test/testApp1",
+        "SPDocLibraryName": "Reports",
+        "teamsID": "1234",
+        "channelID": "1234"
+      }
+    }
+  }
+}
