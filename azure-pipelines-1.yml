@@ -25,7 +25,7 @@ steps:
       
       $appName=$env:APPNAME
       Write-Host $appName
-      #Write-Host $env:Build_SourcesDirectory
+      Write-Host $env:Build_SourcesDirectory
       #$cdir=$env:Build_SourcesDirectory
       #Write-Host $cdir
       #$cdir=$(echo $(Build.SourcesDirectory))
