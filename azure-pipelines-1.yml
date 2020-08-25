@@ -24,14 +24,14 @@ steps:
       #$ErrorActionPreference='continue'
       param($AppName)
       $appName=$AppName
-      Write-Host Testing
+      Write-Host $appName
       #Write-Host $env:Build_SourcesDirectory
-      $cdir=$env:Build_SourcesDirectory
-      Write-Host $cdir
+      #$cdir=$env:Build_SourcesDirectory
+      #Write-Host $cdir
       #$cdir=$(echo $(Build.SourcesDirectory))
       #Write-Host $cdir
-      jsonFilePath="$cdir\pipelineMetadata.json"
-      $jsondata = Get-Content -Raw -Path $jsonFilePath | ConvertFrom-Json
+      #jsonFilePath="$cdir\pipelineMetadata.json"
+      #$jsondata = Get-Content -Raw -Path $jsonFilePath | ConvertFrom-Json
       #$appName = "QMSA"
-      Write-Host "##vso[task.setvariable variable=SonarProjectKey]$($jsondata.$appName.SonarQube.ProjectKey)"
+      #Write-Host "##vso[task.setvariable variable=SonarProjectKey]$($jsondata.$appName.SonarQube.ProjectKey)"
     errorActionPreference: 'continue'
